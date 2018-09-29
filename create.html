@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-g">
+	<meta name="veiwport" content="width=device-width,intial-scale=1" >
+<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="main">
+	<div class="sub1">
+		<h2>Career objective</h2>
+		<select class="" name="career" id="career">
+			<option>Select your career objective</option>
+			<option>To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization</option>
+			<option>To know something new and enhance my skills in a dynamic and stable workplace</option>
+			<option>To work in the company with the positive atmosphere which will inspire me to enhance my skills</option>
+		</select>
+	</div>
+	<div class="sub">
+		<h2>Personal information</h2><br>
+		<input type="text" name="name" id="name" placeholder="name"><br>
+		<input type="text" name="role" id="role" placeholder="role"><br>
+		<input type="email" name="email" id="email" placeholder="email"><br>
+		<input type="number" name="mobile" id="mobile" placeholder="mobile number"><br>
+	</div>
+	<div class="sub">
+		<h2>graduation information</h2>
+		<label for="gdegree">
+		<select class="" name="gdegree" id="gdegree">
+			<option>select your degree</option>
+			<option>B.tech</option>
+			<option>B.sc</option>
+	
+			<label for="ginst">
+				<input type="text" name="ginst" id="ginst" placeholder="Institute">
+			</label><br>
+			<label for="branch">
+				<select name="branch" id="branch">
+					<option>select your branch</option>
+					<option>CSE</option>
+					<option>ECE</option>
+					<option>EEE</option>
+				</select>
+				
+			
+			<label for="gyear">
+				<input type="number" name="gyear" id="gyear" placeholder="year of passing">
+				</label><br>
+				<label for="gper">
+					<input type="number" name="gper" id="gper" placeholder="Percentage(%)">
+					</label><br>
+		</select>
+		</div>
+
+
+		<div class="sub">
+		<h2>10+Two information</h2>
+		<label for="idegree">
+		<select class="" name="idegree" id="idegree">
+			<option>select your 10+Two</option>
+			<option>intermediate</option>
+			<option>Diplamo</option>
+	
+			<label for="iinst">
+				<input type="text" name="iinst" id="iinst" placeholder="Institute">
+			</label><br>
+			<label for="ibranch">
+				<select name="ibranch" id="ibranch">
+					<option>select your branch</option>
+					<option>MPC</option>
+					<option>BIPC</option>
+					<option>MEC</option>
+				</select>
+				
+			
+			<label for="iyear">
+				<input type="number" name="iyear" id="iyear" placeholder="year of passing">
+				</label><br>
+				<label for="iper">
+					<input type="number" name="iper" id="iper" placeholder="Percentage(%)">
+					</label><br>
+		</select>
+		
+	</div>
+
+<div class="sub">
+		<h2>10th information</h2>
+		<label for="sdegree">
+		<select class="" name="sdegree" id="sdegree">
+			<option>select your 10th</option>
+			<option>cbse</option>
+			<option>scc</option>
+	</label><br>
+			<label for="sinst">
+				<input type="text" name="sinst" id="sinst" placeholder="Institute">
+			</label><br>
+			<label for="sbranch">
+				<select name="sbranch" id="sbranch">
+					<option>select your medium</option>
+					<option>telugu</option>
+					<option>english</option>
+				</select>
+				
+			</label><br>
+			<label for="syear">
+				<input type="number" name="syear" id="syear" placeholder="year of passing">
+				</label><br>
+				<label for="iper">
+					<input type="number" name="sper" id="sper" placeholder="Percentage(%)">
+					</label><br>
+		</select>
+		
+	</div>
+
+
+	<div class="sub">
+		<h2>Technical information</h2><br>
+		<p><strong>Note:</strong>All the skills must be seperated with comma(,)</p><br>
+		<label for="pro">
+			<input type="text" name="pro" id="pro" placeholder="PROGRAMMING SKILLS">
+		</label><br>
+		<label for="web">
+			<input type="text" name="web" id="web" placeholder="WEB TECHNOLOGIES">
+
+		</label><br>
+
+		<label for="db">
+			<input type="text" name="db" id="db" placeholder="DATABASE">
+
+			</label><br>
+		</div>
+
+
+	<div class="sub">
+		<h2>Achievements</h2>
+		<label for="ach1">
+			<input type="text" name="ach1" id="ach1" placeholder="ACHIEVEMENTS1">
+		</label><br>
+		<label for="ach2">
+			<input type="text" name="ach2" id="ach2" placeholder="ACHIEVEMENTS2">
+
+		</label><br>
+
+		<label for="ach3">
+			<input type="text" name="ach3" id="ach3" placeholder="ACHIEVEMENTS3">
+
+			</label><br>
+		</div>
+
+
+</div>
+
+<button type="button" name="button" id="button" onclick="submitData()">SUBMIT</button>
+</body>
+</html>
+<script type="text/javascript">
+	function submitData(){
+		var tx;
+		var store;
+
+
+        var career=document.getElementById("career").value;
+
+        var gdegree=document.getElementById("gdegree").value;
+        var ginst=document.getElementById("ginst").value;
+        var branch=document.getElementById("branch").value;
+        var gyear=document.getElementById("gyear").value;
+        var gper=document.getElementById("gper").value;
+
+
+        var idegree=document.getElementById("idegree").value;
+        var iinst=document.getElementById("iinst").value;
+        var ibranch=document.getElementById("ibranch").value;
+        var iyear=document.getElementById("iyear").value;
+        var iper=document.getElementById("iper").value;
+
+        var sdegree=document.getElementById("sdegree").value;
+        var sinst=document.getElementById("sinst").value;
+        var sbranch=document.getElementById("sbranch").value;
+        var syear=document.getElementById("syear").value;
+        var sper=document.getElementById("sper").value;
+
+        var pro=document.getElementById("pro").value;
+        var web=document.getElementById("web").value;
+        var db=document.getElementById("db").value;
+
+        var ach1=document.getElementById("ach1").value;
+        var ach2=document.getElementById("ach2").value;
+        var ach3=document.getElementById("ach3").value;
+
+
+
+		var request;
+        var open;
+		var name;
+		var role;
+		var email;
+		var mobile;
+		name=document.getElementById("name").value;
+		role=document.getElementById("role").value;
+		email=document.getElementById("email").value;
+		mobile=document.getElementById("mobile").value;
+		console.log(name);
+		var indexedDB=window.indexedDB || window.msIndexedDB || window.webkitIndexedDB || window.mozindexedDB;
+		request=indexedDB.open("myDb",1);
+		request.onerror=function(e){
+			console.log("error:"+errorcode);
+
+		}
+		request.onupgradeneeded=function(e){
+			var open=e.target.result;
+			var store=open.createObjectStore("resume",{keyPath:"name"});
+		}
+		request.onsuccess=function(e){
+			open=e.target.result;
+			tx=open.transaction("resume","readwrite");
+			store=tx.objectStore("resume");
+			store.put({
+				
+				name:name,
+				role:role,
+				email:email,
+				mobile:mobile,
+				education:[
+				{
+					degree:gdegree,
+					institute:ginst,
+					branch:branch,
+					year:gyear,
+					score:gper
+				},
+
+				{
+				degree:idegree,
+					institute:iinst,
+					branch:ibranch,
+					year:iyear,
+					score:iper	
+				},
+				{
+					degree:sdegree,
+					institute:sinst,
+					branch:sbranch,
+					year:syear,
+					score:sper
+				}
+				],
+
+				skills:[
+				{
+					title:"programming languages",
+					info:pro
+				},
+				{
+					title:"web technologies",
+					info:web
+				},
+				{
+					title:"Database",
+					info:db
+				},
+				],
+				achievements:[
+				
+					{ach1},
+					{ach2},
+					{ach3}
+					]
+					});
+			// var result=store.getAll();
+			window.open("index.html");
+			
+		}
+
+	}
+
+</script>

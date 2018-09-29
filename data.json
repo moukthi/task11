@@ -1,0 +1,50 @@
+{
+	"data":[
+		{
+			"id":1,
+			"name":"Narendra",
+			"email":"psplnarendra@gmail.com",
+			"phone":"+91 9160626846",
+			"education":[
+				{
+					"degree":"B-tech",
+					"institute":"Svit Engg college",
+					"data":["70%","2015-19"]
+				},
+				{
+					"degree":"Intermediate",
+					"institute":"Sri sai jr.college",
+					"data":["74.1%","2013-15"]
+				},
+				{
+					"degree":"SSC",
+					"institute":" Sai Sri vidhyanikethan high school",
+					"data":["90%","2012-13"]
+				}
+			]
+		},
+		{
+			"id":2,
+			"name":"Narendra",
+			"email":"psplnarendra@gmail.com",
+			"phone":"+91 9160626846",
+			"education":[
+				{
+					"degree":"B-tech",
+					"institute":"Svit Engg college",
+					"data":["70%","2015-19"]
+				},
+				{
+					"degree":"Intermediate",
+					"institute":"Sri sai jr college",
+					"data":["74.1%","2013-15"]
+				},
+				{
+					"degree":"SSC",
+					"institute":" Sai Sri vidhyanikethan high school",
+					"data":["90%","2012-13"]
+				}
+			]
+		}
+	]
+}
